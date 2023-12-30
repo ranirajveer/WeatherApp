@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>weatherforecast</title>
+</head>
+<style>
+  body {
+    background-image: url('https://img.freepik.com/free-vector/sky-background-video-conferencing_23-2148639325.jpg');
+    background-size: cover;
+  }
+  .a1{
+  border: 1px solid black;
+  box-shadow: -1px 2px 5px 2px black;
+  text-align: center;
+  width: 400;
+  margin-left: 130;
+  margin-top: 50;
+  border-radius:6px;
+  font-family:sans-serif;  
+  }
+  h1{
+    font-family:tahoma;
+  }
+</style>
+<body>
+  <div class="a1">
+  <h2>Weather Forecast</h2>
+  <form id="form" onsubmit="getWeather()">
+  <input type="text" id="input">
+  <button type="submit">submit</button>
+    <h4>Temperature : <span id="temperature"></span></h4>
+    <h4>Humidity : <span id="humidity"></span></h4>
+    <h4>Windspeed :<span id="windspeed"></span></h4>
+  </form>
+</div>
+<script src="weatherforecast.js" defer></script>
+</body>
+</html>
